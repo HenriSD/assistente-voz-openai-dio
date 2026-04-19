@@ -1,4 +1,4 @@
-# Voice Intelligence: Integrando Whisper, ChatGPT e gTTS 🎙️🤖
+# Voice Intelligence: Integrando Whisper, ChatGPT e gTTS 
 
 Este projeto demonstra a criação de uma interface de conversação por voz, unindo transcrição de áudio, processamento de linguagem natural e síntese de voz.
 
@@ -17,3 +17,13 @@ Desenvolver uma aplicação em Python capaz de ouvir o usuário, processar a per
 3. **Processamento:** O texto é enviado ao ChatGPT, que gera uma resposta.
 4. **Saída:** O gTTS converte a resposta em um arquivo de áudio (.mp3) e o reproduz.
 
+## Resumo do Funcionamento 
+O script segue este fluxo lógico:
+
+Autenticação: Configura a chave da API da OpenAI.
+
+Transcrição (Whisper): O arquivo de áudio (.m4a, .mp3, etc.) é enviado para a OpenAI e transformado em texto.
+
+Inteligência (ChatGPT): O texto transcrito é enviado ao modelo gpt-3.5-turbo para gerar uma resposta coerente.
+
+Sintese de Voz (gTTS): A resposta em texto é convertida em um arquivo de áudio MP3 usando os servidores do Google.
